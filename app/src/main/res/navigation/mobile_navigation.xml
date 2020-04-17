@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.mahin.bangladeshirestaurantapp.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:label="@string/favorite"
         tools:layout="@layout/fragment_home">
 
         <action
@@ -32,12 +32,12 @@
     <fragment
         android:id="@+id/nav_gallery"
         android:name="com.mahin.bangladeshirestaurantapp.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
+        android:label="@string/help"
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
         android:id="@+id/nav_slideshow"
         android:name="com.mahin.bangladeshirestaurantapp.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
+        android:label="@string/terms"
         tools:layout="@layout/fragment_slideshow" />
 </navigation>
