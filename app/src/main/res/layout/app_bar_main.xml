@@ -9,8 +9,8 @@
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/cardview_light_background"
-        android:divider="@color/cardview_light_background"
+        android:background="#fff"
+        android:divider="#fff"
         android:hapticFeedbackEnabled="false"
         android:theme="@style/AppTheme.PopupOverlay">
 
@@ -18,8 +18,10 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="@drawable/app_bar"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/shap_app_bar"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:elevation="5dp"/>
 
     </com.google.android.material.appbar.AppBarLayout>
 
