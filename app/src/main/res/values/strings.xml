@@ -7,13 +7,16 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="favorite">Favorite Restaurant</string>
+    <string name="favorite">Change Password</string>
     <string name="help">Help &amp; Support</string>
     <string name="terms">Terms &amp; Condition</string>
 
     <string name="home_second">Home Second</string>
 
+    <string name="name">Noore Alam Mahin</string>
+    <string name="email">mahin0w1@gmail.com</string>
+    <string name="mobile">01798366057</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="user_nam">Noore Alam Mahin</string>
 </resources>

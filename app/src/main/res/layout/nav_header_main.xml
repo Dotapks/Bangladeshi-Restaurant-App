@@ -10,18 +10,12 @@
     android:paddingTop="35dp"
     android:paddingBottom="25dp">
 
-    <androidx.cardview.widget.CardView
+    <de.hdodenhof.circleimageview.CircleImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:cardCornerRadius="25dp">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:src="@drawable/mahin"
-            android:padding="1dp"
-            android:background="#B328D8A1"/>
-    </androidx.cardview.widget.CardView>
+        android:src="@drawable/mahin"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="1dp"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -35,7 +29,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="12dp"
             android:fontFamily="@font/noto_sans"
-            android:text="@string/user_nam"
+            android:text="@string/name"
             android:textColor="@color/colorAccent"
             android:textSize="16sp" />
 
