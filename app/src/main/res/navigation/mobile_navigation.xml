@@ -33,7 +33,7 @@
         android:id="@+id/nav_gallery"
         android:name="com.mahin.bangladeshirestaurantapp.ui.gallery.GalleryFragment"
         android:label="@string/help"
-        tools:layout="@layout/fragment_gallery" />
+        tools:layout="@layout/fragment_chat" />
 
     <fragment
         android:id="@+id/nav_slideshow"
