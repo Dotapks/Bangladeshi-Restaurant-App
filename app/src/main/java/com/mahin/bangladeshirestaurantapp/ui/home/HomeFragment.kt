@@ -21,7 +21,7 @@ class HomeFragment : Fragment() {
     ): View? {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_filter_item, container, false)
+        val root = inflater.inflate(R.layout.fragment_restaurant_profile, container, false)
         return root
     }
 }
