@@ -39,5 +39,5 @@
         android:id="@+id/nav_slideshow"
         android:name="com.mahin.bangladeshirestaurantapp.ui.slideshow.SlideshowFragment"
         android:label="@string/terms"
-        tools:layout="@layout/fragment_slideshow" />
+        tools:layout="@layout/fragment_terms_conditions" />
 </navigation>

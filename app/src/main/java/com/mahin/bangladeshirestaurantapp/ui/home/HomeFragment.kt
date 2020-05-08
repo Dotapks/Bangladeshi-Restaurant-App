@@ -21,7 +21,7 @@ class HomeFragment : Fragment() {
     ): View? {
         homeViewModel =
                 ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        val root = inflater.inflate(R.layout.fragment_password_done, container, false)
+        val root = inflater.inflate(R.layout.fragment_home, container, false)
         return root
     }
 }
