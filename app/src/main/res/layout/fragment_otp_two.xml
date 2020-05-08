@@ -44,92 +44,92 @@
         <AutoCompleteTextView
             android:layout_width="45dp"
             android:layout_height="60dp"
+            android:layout_gravity="center"
             android:layout_margin="3dp"
             android:background="@drawable/shap_otp"
             android:fontFamily="@font/noto_sans"
+            android:gravity="center"
             android:inputType="number"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
-            android:textSize="34sp"
-            android:gravity="center"
-            android:layout_gravity="center"/>
+            android:textSize="34sp" />
 
         <AutoCompleteTextView
             android:layout_width="45dp"
             android:layout_height="60dp"
+            android:layout_gravity="center"
             android:layout_margin="3dp"
             android:background="@drawable/shap_otp"
             android:fontFamily="@font/noto_sans"
+            android:gravity="center"
             android:inputType="number"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
-            android:textSize="34sp"
-            android:gravity="center"
-            android:layout_gravity="center"/>
+            android:textSize="34sp" />
 
         <AutoCompleteTextView
             android:layout_width="45dp"
             android:layout_height="60dp"
+            android:layout_gravity="center"
             android:layout_margin="3dp"
             android:background="@drawable/shap_otp"
             android:fontFamily="@font/noto_sans"
+            android:gravity="center"
             android:inputType="number"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
-            android:textSize="34sp"
-            android:gravity="center"
-            android:layout_gravity="center" />
+            android:textSize="34sp" />
 
         <AutoCompleteTextView
             android:layout_width="45dp"
             android:layout_height="60dp"
+            android:layout_gravity="center"
             android:layout_margin="3dp"
             android:background="@drawable/shap_otp"
             android:fontFamily="@font/noto_sans"
+            android:gravity="center"
             android:inputType="number"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
-            android:textSize="34sp"
-            android:gravity="center"
-            android:layout_gravity="center" />
+            android:textSize="34sp" />
 
         <AutoCompleteTextView
             android:layout_width="45dp"
             android:layout_height="60dp"
+            android:layout_gravity="center"
             android:layout_margin="3dp"
             android:background="@drawable/shap_otp"
             android:fontFamily="@font/noto_sans"
+            android:gravity="center"
             android:inputType="number"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
-            android:textSize="34sp"
-            android:gravity="center"
-            android:layout_gravity="center"/>
+            android:textSize="34sp" />
 
         <AutoCompleteTextView
             android:layout_width="45dp"
             android:layout_height="60dp"
+            android:layout_gravity="center"
             android:layout_margin="3dp"
             android:background="@drawable/shap_otp"
             android:fontFamily="@font/noto_sans"
+            android:gravity="center"
             android:inputType="number"
-            android:paddingTop="10dp"
-            android:paddingBottom="10dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="5dp"
             android:textAlignment="center"
             android:textColor="@color/colorAccent"
-            android:textSize="34sp"
-            android:gravity="center"
-            android:layout_gravity="center"/>
+            android:textSize="34sp" />
 
     </TableRow>
 
