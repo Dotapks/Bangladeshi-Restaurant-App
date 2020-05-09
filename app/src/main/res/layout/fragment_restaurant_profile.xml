@@ -115,6 +115,7 @@
                     android:id="@+id/textView6"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/noto_sans"
                     android:text="Open Now (10 AM-5 PM)"
                     android:textSize="14sp" />
 
