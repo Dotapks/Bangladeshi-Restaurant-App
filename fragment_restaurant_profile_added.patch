@@ -1,0 +1,524 @@
+Index: app/src/main/res/drawable/shap_restaurant_name_bg.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/shap_restaurant_name_bg.xml	(date 1588957087052)
++++ app/src/main/res/drawable/shap_restaurant_name_bg.xml	(date 1588957087052)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
++    <solid android:color="#ffffff"/>
++    <stroke android:color="@color/colorPrimary" android:width="1px"/>
++    <corners android:radius="10dp"/>
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/drawable/shap_btn_restaurant_active.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/shap_btn_restaurant_active.xml	(date 1588958333623)
++++ app/src/main/res/drawable/shap_btn_restaurant_active.xml	(date 1588958333623)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
++    <solid android:color="#4D28D8A1"/>
++    <corners android:radius="10dp"/>
++
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/drawable/shap_restaurant_profile_bg.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/shap_restaurant_profile_bg.xml	(date 1588954359963)
++++ app/src/main/res/drawable/shap_restaurant_profile_bg.xml	(date 1588954359963)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape
++    xmlns:android="http://schemas.android.com/apk/res/android"
++    android:shape="rectangle">
++
++    <solid android:color="#ffffff"/>
++    <stroke android:color="@color/colorPrimary" android:width="1px"/>
++    <corners android:topLeftRadius="20dp" android:topRightRadius="20dp"/>
++
++</shape>
+\ No newline at end of file
+Index: app/src/main/res/layout/fragment_restaurant_profile.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_restaurant_profile.xml	(date 1588958265138)
++++ app/src/main/res/layout/fragment_restaurant_profile.xml	(date 1588958265138)
+@@ -0,0 +1,215 @@
++<?xml version="1.0" encoding="utf-8"?>
++<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:background="#ffffff">
++
++    <LinearLayout
++        android:layout_width="match_parent"
++        android:layout_height="wrap_content"
++        android:orientation="vertical">
++
++        <RelativeLayout
++            android:layout_width="match_parent"
++            android:layout_height="300dp">
++
++            <ImageView
++                android:layout_width="match_parent"
++                android:layout_height="match_parent"
++                android:background="@android:color/transparent"
++                android:scaleType="centerCrop"
++                android:src="@drawable/food_lg" />
++
++            <ImageButton
++                android:id="@+id/imageButton"
++                android:layout_width="40dp"
++                android:layout_height="36dp"
++                android:layout_alignParentRight="true"
++                android:layout_marginTop="20dp"
++                android:layout_marginRight="25dp"
++                android:background="@android:color/transparent"
++                android:scaleType="centerCrop"
++                android:src="@drawable/icon_hart" />
++
++        </RelativeLayout>
++
++        <TableLayout
++            android:layout_width="match_parent"
++            android:layout_height="match_parent"
++            android:layout_marginLeft="50dp"
++            android:layout_marginTop="-80dp"
++            android:layout_marginRight="50dp"
++            android:background="@drawable/shap_restaurant_name_bg"
++            android:elevation="5dp"
++            android:padding="25dp">
++
++            <TableRow
++                android:layout_width="match_parent"
++                android:layout_height="match_parent"
++                android:layout_marginBottom="5dp"
++                android:layout_weight="1"
++                android:gravity="center_vertical">
++
++                <TextView
++                    android:id="@+id/textView5"
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:fontFamily="@font/noto_sans"
++                    android:text="Bengali Bhoj"
++                    android:textAlignment="textStart"
++                    android:textColor="@color/colorAccent"
++                    android:textSize="16sp" />
++
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="match_parent"
++                    android:layout_weight="1"
++                    android:gravity="right|center_vertical"
++                    android:orientation="horizontal">
++
++                    <ImageView
++                        android:id="@+id/imageView6"
++                        android:layout_width="16dp"
++                        android:layout_height="16dp"
++                        android:scaleType="fitCenter"
++                        android:src="@drawable/icon_star_fill" />
++
++                    <ImageView
++                        android:id="@+id/imageView7"
++                        android:layout_width="16dp"
++                        android:layout_height="16dp"
++                        android:scaleType="fitCenter"
++                        android:src="@drawable/icon_star_fill" />
++
++                    <ImageView
++                        android:id="@+id/imageView8"
++                        android:layout_width="16dp"
++                        android:layout_height="16dp"
++                        android:scaleType="fitCenter"
++                        android:src="@drawable/icon_star_fill" />
++
++                    <ImageView
++                        android:id="@+id/imageView9"
++                        android:layout_width="16dp"
++                        android:layout_height="16dp"
++                        android:scaleType="fitCenter"
++                        android:src="@drawable/icon_star_fill"
++                        app:srcCompat="@drawable/icon_star_outline" />
++
++                    <ImageView
++                        android:id="@+id/imageView10"
++                        android:layout_width="16dp"
++                        android:layout_height="16dp"
++                        android:scaleType="fitCenter"
++                        android:src="@drawable/icon_star_fill"
++                        app:srcCompat="@drawable/icon_star_outline" />
++                </LinearLayout>
++            </TableRow>
++
++            <TableRow
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                android:gravity="center_vertical">
++
++                <TextView
++                    android:id="@+id/textView6"
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:text="Open Now (10 AM-5 PM)"
++                    android:textSize="12sp" />
++
++                <LinearLayout
++                    android:layout_width="match_parent"
++                    android:layout_height="wrap_content"
++                    android:layout_weight="1"
++                    android:gravity="right|center_vertical"
++                    android:orientation="horizontal">
++
++                    <TextView
++                        android:id="@+id/textView8"
++                        android:layout_width="wrap_content"
++                        android:layout_height="wrap_content"
++                        android:background="@drawable/shap_restaurant_rating_bg"
++                        android:fontFamily="@font/noto_sans"
++                        android:paddingLeft="8dp"
++                        android:paddingTop="1dp"
++                        android:paddingRight="8dp"
++                        android:paddingBottom="1dp"
++                        android:text="3.0"
++                        android:textAlignment="center"
++                        android:textColor="@color/design_default_color_background"
++                        android:textSize="12sp"
++                        android:textStyle="bold" />
++                </LinearLayout>
++
++            </TableRow>
++
++        </TableLayout>
++
++        <LinearLayout
++            android:layout_width="match_parent"
++            android:layout_height="match_parent"
++            android:layout_marginTop="-50dp"
++            android:background="@drawable/shap_restaurant_profile_bg"
++            android:orientation="vertical"
++            android:paddingTop="70dp"
++            android:paddingBottom="20dp">
++
++            <androidx.gridlayout.widget.GridLayout
++                android:layout_width="match_parent"
++                android:layout_height="wrap_content"
++                app:columnCount="3"
++                app:rowCount="1">
++
++                <Button
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:layout_marginLeft="5dp"
++                    android:layout_marginRight="5dp"
++                    android:background="@drawable/shap_btn_restaurant_active"
++                    android:fontFamily="@font/noto_sans"
++                    android:text="About"
++                    android:textAllCaps="false"
++                    android:textColor="@color/colorAccent"
++                    android:textSize="16sp"
++                    app:layout_columnWeight="1"
++                    app:layout_rowWeight="1" />
++
++                <Button
++                    android:id="@+id/button9"
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:layout_marginLeft="5dp"
++                    android:layout_marginRight="5dp"
++                    android:background="@drawable/shap_card_bg"
++                    android:fontFamily="@font/noto_sans"
++                    android:text="Menu"
++                    android:textAllCaps="false"
++                    android:textColor="@color/colorAccent"
++                    android:textSize="16sp"
++                    app:layout_columnWeight="1"
++                    app:layout_rowWeight="1" />
++
++                <Button
++                    android:id="@+id/button10"
++                    android:layout_width="wrap_content"
++                    android:layout_height="wrap_content"
++                    android:layout_marginLeft="5dp"
++                    android:layout_marginRight="5dp"
++                    android:background="@drawable/shap_card_bg"
++                    android:fontFamily="@font/noto_sans"
++                    android:text="Menu"
++                    android:textAllCaps="false"
++                    android:textColor="@color/colorAccent"
++                    android:textSize="16sp"
++                    app:layout_columnWeight="1"
++                    app:layout_rowWeight="1" />
++
++            </androidx.gridlayout.widget.GridLayout>
++        </LinearLayout>
++
++    </LinearLayout>
++
++</ScrollView>
+\ No newline at end of file
+Index: app/src/main/res/drawable/shap_restaurant_rating_bg.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/drawable/shap_restaurant_rating_bg.xml	(date 1588955943414)
++++ app/src/main/res/drawable/shap_restaurant_rating_bg.xml	(date 1588955943414)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="utf-8"?>
++<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
++    <solid android:color="@color/colorPrimary"/>
++    <corners android:radius="5dp"/>
++
++</shape>
+\ No newline at end of file
+Index: app/src/main/java/com/mahin/bangladeshirestaurantapp/ui/home/HomeFragment.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/mahin/bangladeshirestaurantapp/ui/home/HomeFragment.kt	(revision 4b78a6ddbc9cc24ebbf2d938aa3daa0a432e577d)
++++ app/src/main/java/com/mahin/bangladeshirestaurantapp/ui/home/HomeFragment.kt	(date 1588956441491)
+@@ -21,7 +21,7 @@
+     ): View? {
+         homeViewModel =
+                 ViewModelProviders.of(this).get(HomeViewModel::class.java)
+-        val root = inflater.inflate(R.layout.fragment_filter_item, container, false)
++        val root = inflater.inflate(R.layout.fragment_restaurant_profile, container, false)
+         return root
+     }
+ }
+diff --git app/src/main/res/drawable-ldpi/icon_star_outline.png app/src/main/res/drawable-ldpi/icon_star_outline.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..a6c211cd0e7a9afd21370a55e9a370d7bd4a272f
+GIT binary patch
+literal 293
+zc%17D@N?(olHy`uVBq!ia0vp^oFL4>1|%O$WD@{VEX7WqAsj$Z!;#Vf<lpghaSV|N
+z5A8b`dMH4I^?5DV29`oa&oC#}Hog@NDzX`@$N1hTbn*r?Eo8d!bg}eH2kr;){`=Vb
+z@4TIDoZnOL-JYhkd9Ek-{LuN&C&xO)b_Xh0%@=(tU-J9j8TF#_10sRS^9<)1WOddS
+zJk03K-_Nt#DW~yXy6arNSl%ZR-<|H8&5GG@ucz1l)T=*Avb(~Tg%+GjzWnCGnmKpa
+zT4x(tsIhE!PJFp}Reyk$iRH6<$M}{AZT`0XJ=3dK654$Z+*2g3AClvL`Ac=yqJJhc
+of9KdT6?WFwa=g1ze`eKRekPw(Q)hQmkiQu`UHx3vIVCg!05z|3jQ{`u
+
+diff --git app/src/main/res/drawable-ldpi/icon_star_fill.png app/src/main/res/drawable-ldpi/icon_star_fill.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..dd4636f8effc2a35a079933ea589dc08c911d2e7
+GIT binary patch
+literal 261
+zc%17D@N?(olHy`uVBq!ia0vp^oFL4>1|%O$WD@{VEX7WqAsj$Z!;#Vf<nQrxaSV|N
+zZ|y(J+vFh7dS8b%qA7;un@U-OYy_jdYzAvkldR5-22~ICqU4L+B@0+LB;Rmpx_G2~
+zR?5DgM*Rk!7c{1K>K)m0$!Pcf@GqQGSvfc*mQM4ua_U~qB`fC5peOOO!sW!wK<PxQ
+zPo*CfF63m*Imc6XDM6@hRr~`6iGvgWp3J`Lw!xzI=8ZL5&uDS8_I5cu`opeOEbuL%
+zgn^4elcSjJ?JWhnh{?G(tQSuE$Z+GwuN|g~*5}2A?Psvm@HWkvn%@NU2ZN`ppUXO@
+GgeCy1gkQD*
+
+diff --git app/src/main/res/drawable-xhdpi/icon_star_outline.png app/src/main/res/drawable-xhdpi/icon_star_outline.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..f42636b8d0377103e7ceee5ce59d5b47b4499c3e
+GIT binary patch
+literal 638
+zc$@)#0)hRBP)<h;3K|Lk000e1NJLTq000;O000*V1^@s65h0H)00004b3#c}2nYxW
+zd<bNS0006tNkl<ZNK2KK&3V&65Qe{5AL3h*3J?d#>J}=%DS-wesREn|Fcn}|U^xwt
+z4lotqn<O|yu7Kp`9K6FbQY5Y9wI${#&(1qP-;4<Z?cML?^~lh7ao;Qc^yhuF8S<2d
+zIEjx=Ryhc7N`GFbI=mV3b`U@(_aTUvt$=K9Qa@VvK?VZs?5mK&s^|qcv#%NbRSW=F
+z*)z69?EjdB6Hq9IM&~dl1XEb|nJFp(%{&-9r;&Qt^ZwbTEYiu+W1`OlTm$d`@|=TX
+zY*Rn*yvOCm*$d?aI(HA4a{xI58)9BiTYe`r!4#$bZTu?P83<qc6vW^SU8V8U(QL||
+z=S=jF>D##-P$#PyfJsqxJ(CWSu_fuZGPJfK3@kDoO#3qI0M{UVtOW*sHi{?3klhfT
+zXF9wa0@2AT1|jGMm!a1xazQ{Gr&nRAoFjHBc&TX1oRAYIp}U0q+7?@`2YXOnP4%lO
+zm+ra)u6`>9ZK-Lm%!lqS8~{Y;;}`X}S+3*fKqt!yNd2gMQym<{JNVFjv^z7G`P=A8
+zzRN<Ei_8nTq_U(S^>`{72cRjt>gmYPH-JR*jS<H%{Iv~ema%el0cy!HSeEeOl!|O0
+z*Z#Nwt%b3JOGTyhj@%)}&(sfEl^z1p6?Ze1z{E7)jZJYb#yd4-;%OHo)nq!nY<035
+zOj`guungMvEw8GY5l{?XO#Cw)wp!|F(R~Q8{0HQKnWcUt=l7@;N`jKZC#OEHE^hVU
+YA0~-6p*DVUZU6uP07*qoM6N<$f@|~|djJ3c
+
+diff --git app/src/main/res/drawable-xhdpi/icon_star_fill.png app/src/main/res/drawable-xhdpi/icon_star_fill.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..9e72f59ccab0b96864accb7f853f212b27e622da
+GIT binary patch
+literal 495
+zc$@+60TBL)P)<h;3K|Lk000e1NJLTq000;O000*V1^@s65h0H)00004b3#c}2nYxW
+zd<bNS0004|Nkl<ZNK37i&sD-e5XQgR9OMR8U_7YH4J!~zumMRbfDWVts31TC+JRVs
+z+z5IwRv@{-Av?a6KM#_H><igrGV}drcfOq^SgxDTpy4Qb(cy{U$FEy|YLiMfK{`gx
+zMiB^C>v*1o(rek|S^?y2?14Bq5M<Q~>;5DUVhPx<ek*CWi(G)Q`W+*G7Zw0h_4d0k
+z0{$ICP8CXdVDe6#GlTo&h}VRZ*yJpdv%qDd4gn1SE<kQx<4*tQ2tdTZl$Zx}XutEM
+z)7cE3(p@-Q5U5(N^hS;GL;AdhqDk2h2FFTp^S{YuL$>0&={pyd1=$zZ#UI%8Tu53x
+z1K1vyqr^v%rYAz(r|&}MqPgEet+EooMF62}XY?{3<Sb}{#9I*n3=`G>81+DSE(Rb!
+ztUnF+b4`FD2<;*O1_pE4?&bj|AUv1=+9hje9J%?7_psh>o(6;?Hq4ZmnEK0#>g#`%
+zrRXwoHw|L&VlKT)Yk;nJD;!<>i~U6Hwu_bM5zyJa4&Zn$y;{x@jXi+%8xR4i7uJ0}
+levd9a?g7!;jQU}^$$ykB(~=noSGoWI002ovPDHLkV1mnT*A4&x
+
+diff --git app/src/main/res/drawable-mdpi/icon_star_outline.png app/src/main/res/drawable-mdpi/icon_star_outline.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..9197a0f780a0cd986c2c2bb9f50008895c8300cc
+GIT binary patch
+literal 367
+zc$@)m0g(QQP)<h;3K|Lk000e1NJLTq000aC000aK1^@s6R&`wG00004b3#c}2nYxW
+zd<bNS0003dNkl<ZC{t}v!BxUQ6r9-$-b@K_5SEirfuRDaz_1l)2SNu}L5LM#1;h^G
+zDH}XM2|3Ea{k|oFYaahN|IhrHAufzAvm6w$dNygV*#>l(#-Q39ad8tnG<kS)fso}w
+z84<h&ByWG=%{Cn=r|w8Z5QzcC5G(+6K_s38G8aMZlzZpEuIfgu838^H9T#7HArh)J
+zf!n{G)YRqc43tzLg;Qca`=$szHx9TV7(r-`83Iy$=tythGquONyEN(?xH}!&;lt`2
+zdSJ69fyZy<#-}f*#sqk&bn@gyLW1{u@2dp)+ys(^uULS$N+;7cp$G$pIeflK&&K}<
+z+Gg@wQwF$sLs0XkTEOb$=;myxU!_y!P}rf_hw8dayG~)W9hkMpe*gz`hH5q93*P_$
+N002ovPDHLkV1fk*mK6X1
+
+diff --git app/src/main/res/drawable-mdpi/icon_star_fill.png app/src/main/res/drawable-mdpi/icon_star_fill.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..f19883c72cd933d6286e4b219a1b3d206ce498dc
+GIT binary patch
+literal 306
+zc$@(;0nPr2P)<h;3K|Lk000e1NJLTq000aC000aK1^@s6R&`wG00004b3#c}2nYxW
+zd<bNS0002#Nkl<ZC{vA)!BN975Jmr215g4N@cKlkAWj8I1=y+pN=OM%fnzEN6`*wB
+zo8_D+!4+s3+cOzQBWAKE&EI|d_lroBbd3X5y;PgH%~+7GE<p1$=^8dZw{AI;0LJZD
+z&qL~B7e1crl?i4|;vT96z~b6f9Z08&A((Jt<_`nGyHu7~Q|LhHzA8}bTL38Sl;I{w
+zX?^~BxP;Dp^FiP(<)px8FXj8#TLMP{+kb%XUdmkzv;>~hfVRC<FIRy0M(3|b1BCqy
+znmveee0eFSYc3}}_4UpKv_7}LOBd<thhVTeXZASif0-3nYJM$7PXGV_07*qoM6N<$
+Ef+)>=<^TWy
+
+diff --git app/src/main/res/drawable-xxxhdpi/icon_star_outline.png app/src/main/res/drawable-xxxhdpi/icon_star_outline.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..111b945c28d528e4f72fbae85c012e503a399d34
+GIT binary patch
+literal 1128
+zc$@)f1eg1XP)<h;3K|Lk000e1NJLTq001xm001rs1^@s6Zr++~00004b3#c}2nYxW
+zd<bNS000CZNkl<ZXhXf4&vg?q5XQe*^Kfps1Iz)uJ|$FusesS`yY3*VAaMnR3cRKP
+zLIpS#U{03dkfj2`Eq)L0@TA1Se^%1$S|-OtJDT5&H2O3OVGlp?bl7I1_XIjN=83c0
+z$9$SU>)(W)jzSyM_Bty2N}!{4+dNir`a1M{!2#mw#}vfFQb)OXt-AejNQm$ND!T@#
+zUG8M~ECdB`Mt?~ZI16C`oY8+E2)Y-70f?f%hb)8x5Jf+H7J>j&ihkfMgaN1&{jgcs
+z8Nd~N2LC3|6KmZMP?2^Aa7CXn0MG^@+1I(S6M!%J^Cq_sZqWio*ZazX2tbQ7JZe1U
+z1s@Ti1?C<Dt!=%t;wEFDy2-izO*|cC_AKZTJZ9jAh$aAXM3mn?T6~j;zXyQ!^{{pD
+zr*VjawG3!8vle4*r<0bj>b0+<zjVL^z?B83IC8@ofR4(v^gRhCvR0zMwCT@6#n}nx
+zs*?;To{r8zIIH-%eMxUb{~y3ES+JA<&?$9P_KQHRPyi^2{=Txn;E4vfan|Z8WQ>vO
+zCaLWcv(Ij$OAuaFF>4#kz&E{wJQc#aQ?HnCLyQSP`J%Cy{CLsVRmA)A{QK}IDjGdv
+z)|u}y>57I!?}r-$82CUsD$RK`_8MSZ0fjD$x$5@ws*_2^n`&haJ{sCDMR%5T^ykf@
+zXR44Kg8HiaE|WM@cT7CXhG4QT!&T>XnO-{wM47lRUv(XHeOJ|aZENi$7H5JuQ=POQ
+z5~7atTL6`oQ$UEi&X)rGZwR6DpXbdYEz?F;F(+P5Tz_MWRDkDfajH=f1mj9|lU|+u
+z5c_U&9_Ot~Xw?}XgjSxjIISf`Vl`qbxWIW4z;aI<%%fkWlkJj$=_m)`>9$?YRh&MP
+zWL18lvFLeyoX_H<mK5)((Io+I${ba3BJxc%D4q^`py*54L<~Be#qTa8(b^p2+Qf^f
+zcq!3VLIB5|!O~eU&{1Sm=YopQWzM{q4UZ#^K9#{2RJ{G(>0kN+BL%Q3*3DGkWsA-L
+zTCYsR844b(3PG((8%6ZhvbP@Y)Gi1qz_?VyGk&UWVp{22uQIk-H$beFNLU<X0Jd^>
+zC$UpRbmmi#n>-A@m^XP~7m%__<OOhd6gc<kc31itY~IXlS6WFWk^opMkZ*(S{C7d?
+zQ2-FOYf%YGptHOHuEWOb3}bZP8?ASVcXT+Ga|-~<o=iQi-*4_^$uy-Ek?ucL0})gr
+zFMv~UZI>2v@wYvtY7nOA!rMT2u<NfxK>$pDhKm#F8?fnWgLOtqgxq>me3i%#U{#E!
+zxA7C8^SYf1ABYajEKW9F{MP}!0Hu0mN5{)V9TT6db_mVu4)d`ut6qS6nV{FM{>P0r
+uF<sV;xNGa*U7Q-JcA5zj;^IQmK>G_o>S-F}Ty+Hi0000<MNUMnLSTZ?p9@(4
+
+diff --git app/src/main/res/drawable-xxxhdpi/icon_star_fill.png app/src/main/res/drawable-xxxhdpi/icon_star_fill.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..b9e3b3e8d26d8c45af62c628fc40ad1427c3e77b
+GIT binary patch
+literal 1234
+zc$@*!1TFiCP)<h;3K|Lk000e1NJLTq001xm001rs1^@s6Zr++~00004b3#c}2nYxW
+zd<bNS000DuNkl<ZXhY3eTWB0r82<j*HL*t2s<csCYuwA6HBgnlSV1K9q1qyqQu?6j
+z&IVe=r+`oewHozB5J9}Xc<Ih+eMp3&s70_z!GL)vRiwIeHWM3bEe4SmAx)Z2=9f*g
+zYiM`(%<i1*c3<}4ob%oO!<m215SHN=b91Yr9=}Jxjs<weyR%pOdndd4W_8n%Zond*
+z$Y+m(sCy|kgTIs_vrRXjb^}Ri?=~18R1(U-CMm2DohI}e;K7I~&z&I9+KM8X$DCAV
+z;}vV5R{CYp?DsgSz9YI!=&OJ#{gPtMRnTT2Q2J#P`l_JEK+yF6-$zFrk?GN~jkFl3
+zEB!^)Uc}$%Ci=$0nh0;8?)1z1NJ|w$8)zi`k_8=A2xp+-^e<XqU_=UQQ<!ZO%0QU(
+zbyY!WV9g(cD>|lU623uk!}sIFh%r&|KhDH!2xNpw5Dbrre+S3~Fu}yG;Tx_OH745T
+z+T35ech1$qFB^!DXS<^w)-Q^SF(F3G2@tIgB{1Y-22K&!<pp!(64L~Lqf(?#6rmRk
+zm`?T(fgTRY)zsw-d?<yrhfK$Qi-7*7vTGt^a6g$&_AG&}*M!+z80KF{<n7ZS+|pcT
+zJ!}jdEmq)t0zIt<vdJjS&r?!<b~EwZv8pd2P1Y2Yj)9-0u<l+wg+96!h>jA_6%?SA
+z^NQlnxBCxHcJ-YtKL?6830Gb4M?sWmr8p%w^OzTnZgvyB|CXNvr9~od-^7Gr0@f>m
+zS}=jZ-%od3v-#B8oiio+%UX%}_@~!JJ#QF98(N^TDkXyt&qr2mbrW08FP&7e7h3&S
+zu4CmH|2q)fcO{r$;E*(Dw}GCzaH*cE&D_N%?%cNodZ3ji7#Nb~?T>?cyh=K1cBAp}
+zZ`vdCe;*{^kye;s@BwLByFkR%_?7K6cqD4dlb;iy{aUbAC=7fo&GhbC;x9XeY5@wz
+zu9|}G>M;1U6q(zC;HoPCAobgUbv)-y1_9JH$CzKyu6mgXT!BO(yEWp|SGvRn!SN!-
+z1~;+mm}+jI3Yd=l909MZz;urL#8$z~<W!hJ4SYgCuL?}(I0J7;VLhwD3}_(xBZ2Nw
+zf$1Dycz6kGiwaY1fCmiWbj^U!rUKJC&N%6$taU0(rGcc}FAO&FDxl>UKXU_JJJp$<
+zu7#~MU^?~=0*01Dpc0dDzmu|l2xUOz?Ew&8R+25l1fS^1f|;)Py{$wSqyj_b&!zQ>
+zWd0gJXQQn-gWr}SQ}fCvhyjNHvmWgXjLt{=y`}qqk<UHK<iA?)Nyfmi6xKuGwopAi
+z5c3$5@q!fT;Yy^5LT-Cx-hT~5cLfTBdCEy;IvX~y@Sg1Pl!}bOKM~VDCuId{H%uq{
+z1b|lv6jNb4!m7DTlv_yTv;TnT#)?FY<4kx_3hN7%kV@l1+7_4x0J@{ncrh3$GWRxI
+zf#SlXw4X5;Z!QI4umcz`Ns-oaye4IC53#@R(z_|2u)Sbf2SXVsF1~YOf1+)U`k81Y
+wfWbx+S5?V$>|SDitay#igm((2^`~mhe`0*XL8mZo!vFvP07*qoM6N<$f>$|8r2qf`
+
+diff --git app/src/main/res/drawable-hdpi/icon_star_outline.png app/src/main/res/drawable-hdpi/icon_star_outline.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..4fad5a3b425a62d680e8d548ba5446689827dc54
+GIT binary patch
+literal 497
+zc$@+80S^9&P)<h;3K|Lk000e1NJLTq000sI000sQ1^@s6R?d!B00004b3#c}2nYxW
+zd<bNS0004~Nkl<ZI8T*Sy>Z(x7<~^Z#4Z|vZY;2hGJ&ND;t5P^f+Q0}-oTlF!URz!
+zkh}q15vr^WqI6UdemMeyj-p83866HE9^W593@lw_G02SohvP`*`<um~Z=AzGW(6X3
+zGlD0Zq|0{$#c$a-I;ub6qCjd^H+`&n8R^0-LHxL2Fu<x4sAe-d@{Qmaf)@uy+zqj!
+zGgPS*kQjm(;Ovq`HTOVj)09ad2eAjZM^zb4?CL=9W2cFN7n`IGSQlnnv+A0wneu8t
+z@Fe7c@-Mf^V%xl^i)<$RFr~=!oTdvDzv=x@TLPba%CbI=WYL$-$-fQ3>8Tc`jH++W
+zY!`K@)`7Y}@|}MC+?LS=Vw3dIXVF-?Xcn-Vx24_gvU?@!S6~uAI)Jj-IUTtMsy*sE
+zZ!<cV(CW0V#!Ses?u#Nn%LsXByMW(!`r$bUx&WG3vnKGxAIkQsQ<N2i&Jzesue6CZ
+zc}TBOzQ5jsR@WLGyY|Q$Y5!YgR6R!}#(=72`<LLfYWaQAJR^Yts-;a9`&J?204Tug
+nPN%+0?f65dh90nXx5EBE;^x_1`9bUX00000NkvXXu0mjff3o1y
+
+diff --git app/src/main/res/drawable-hdpi/icon_star_fill.png app/src/main/res/drawable-hdpi/icon_star_fill.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..f41a8fa07bf031d120957e43a5156d4e0ddffc94
+GIT binary patch
+literal 409
+zc$@*50cQS*P)<h;3K|Lk000e1NJLTq000sI000sQ1^@s6R?d!B00004b3#c}2nYxW
+zd<bNS0003{Nkl<ZI8UXN!C8Yq5QX3DCEQF2<do&49hg*L2d?QrD-b(K2V^^l6$Cqo
+zCpM?hfp{Yq#t#Sx1U8B8b!YzX&6~GNupAi$E{HY^B!>~t<H;f!DknQguRu^m4dcyt
+z%D)=q?t`&&5MNazgL74rAytElWTbr%URw$*s(L}Wn$dyw1R6I%HdRy@Due>q1;Yhs
+zX7jDIixUF2AjAO0$TCe+vq}hbbFSHTUw~z#LlEx&2f{m*eu$8O+dsh=I(4$=!t7$z
+zsaRjFjG>LEo^nQOYcgsC@SMB`qz4qtKw@)_Q6@c`8*dR-wOvK0AsnDG=w&A#m%X5=
+z(Q5)8E>raD&&g<0qqp7dG5EVI>|~AcVLVlbw>_HC+<jZAlP#STV?g9%mp{Sr7^&+1
+z7N}Ol&_L!JZxJ^ei|2F%GVr;R>aN$LDpR%(Y{<VK<_V5nD|Q{_00000NkvXXu0mjf
+DUKFO-
+
+diff --git app/src/main/res/drawable-xxhdpi/icon_star_outline.png app/src/main/res/drawable-xxhdpi/icon_star_outline.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..2f3dba98f2bd129378cee9fe75e88e6cf59188b1
+GIT binary patch
+literal 926
+zc$@*A17ZA$P)<h;3K|Lk000e1NJLTq001Na001Kh1^@s6`~|2W00004b3#c}2nYxW
+zd<bNS000A3Nkl<ZSVz5>&vn{B5XQfe--~^VI|v*ciBm`gwkrs3z!DXhRA5|zNd-t$
+zKq@e<Ao#>$A51C;xk28uCT}HV3+*2X^b%dQGy9uwXLd#+)O=hK-U0}u8zLGA*T1Rb
+zlIj?Hvrz!z;g%1M&qb>{+1GD9AQ3(T)Y#sfC&CNP|2vRYos6P}N_#8hY1Mfp+FPZ)
+zfUN4&RB1mTt2*^m+8L;lIyF?<9Z07RBLdI>;k0hWRR(H2508)jI9Fiwm6GPTnF2X?
+z$~!_JTwelLdK4h<X>`gjd`yHkzzr}O473S!to6u<M9WWZYHt=zRFzUI1}_Pig0KK+
+z!Hg*#&{CXS-sk;N8adrEqhs9E78}P+(dsTzpy8QTr4nrtSi*Sqj=z#8!aIP@D(P8V
+zlv5{rWmBni4@N|uh`4m2W&wkL6LULLCtGszIBYvHO$hXUSHFqRsu86CGzG9=qABsq
+zxCry6(y+mF(2>CU>eHh#@SSWC$+KnR?xWis?;34!z0B3a^+7;jIj*RMx=}o-vJ$8%
+zF<+R}s0zB-<4#vN3_Qe696WvOPG8HuOsUx6b7@c&Aiu5*W_=i+Et=h>wAs3c{sq)7
+zFbdGy@i`#@pVTVn<@%7DSu|y8c{7>Z^uu&ad1W$R+SZXKpfk}!;oIEvdu1@`MHz)4
+z_-bHy(7|XG%8X4=vNY$O->C?sv=W)XCKxNwCc-`l*IS!2ZbZvh8?1)V714lzt6l7^
+z-QE?^n1C;NhcU$$RqrKNjC#twqiHvJ|5hN~-2CFipY!D}8!8iB5n+j#qx>h3w%Ic7
+zMawt#&JrNC&k4^@Y|_o>T4~J0A!5Ff7ils{tes!Q)69J6^3VumiVlbaICKrBWCk)m
+z8!*6;iTz<akKRU>qP+!3{VGj|EW@B?Ak*4dzS}H7ky>F@YQ4%DOQqU?jN_=XCqs^*
+za>(C48WWtQ(#$|rzP%Vf0qTp^Wtb-VC;(V0YX`Gbngz%*NftngLdg3Ei2Jsw(Nt+h
+zAXkJkfw#s`IW+=Kf9_ol%2FjM`IXaS;-2aU4|C6#)1>lLs<O@aI#?aWgQ}fA-xKp-
+zn_0YL`iEq{7-vKI@29ak!gN=VV(6)2XqWl=3yC`LzQ9?#E&u=k07*qoM6N<$f<9NO
+AiU0rr
+
+diff --git app/src/main/res/drawable-xxhdpi/icon_star_fill.png app/src/main/res/drawable-xxhdpi/icon_star_fill.png
+new file mode 100644
+index 0000000000000000000000000000000000000000..7ae7c06c71baa23bbd78d502be85ed88897176cd
+GIT binary patch
+literal 688
+zc$@*S0#E&kP)<h;3K|Lk000e1NJLTq001Na001Kh1^@s6`~|2W00004b3#c}2nYxW
+zd<bNS0007KNkl<ZSVzT}L3Y|O5QhJ8-)q>F8`N2(mRI!+LQc?}0Gkt(o}kVN!VR!F
+zL3)Ca8<3TiW)XS=x+8tBo;;h924f3Zg2YQS^Xv03MjDx5`FJw91P~Q6L^P6Kcwr++
+zHpwEJL?9k-XmEZe{lU~!*A7S~4*<EFlk-%H=<L;jYTa2=Sh!^Dkf?R%naJ2BBOs+a
+zmM)nADc!MisWp(6I~Fdr2hwuK+$C)w_hH=a{Bgd55w|L7LL|K~)y>%g68Do+{>xn=
+z1OU5WxC{gY>gtNt#W8q6zzl>rKyzly=p8NON&n_$JgwfGE}3y|JE<vf2}`(IzUOZw
+zWO5Bq&s1!$d5n~VOnI-O7GezkO(ILDAe>t0>@AgnA9V6_95^{m3G`ua$_7HEJIp~@
+zWp53|z-{j2(fy~v?78gU3aWs4Jj#3X<H4eA@?N_8+E7)PEujC)=OhGtHux)Or_{mJ
+z0u?_No8{4?Gd&bk6HFt}A)!<-N}ys;WN8e-ckOl131nPIKWsdpm8ZQY(<=hL=**)X
+z!$_qcme;1bM+v0vo3#-(0~t5c4;#<U9YBXU=cEW5=WQGi*|-OCt_^)qr*VEP{lUD|
+zlC|oc+fpm;Z3>4DP+@CuMWv~L^xG0f(T2JpeAF^aQEAOUI=2hPFMwj{_mkDWHHiQ&
+z_AWJ;qS6#ViVCZMR9*4pWC-N3s>f=ov_>FLCX1?I(L@1Gd?)&&T}xA59+u9KiHF-d
+zxV;l$U|eOZZjMIFPCi=qExUl$<5jSKo#A=YHzf7On2n2XKkl-FSzC}Q@CppUF0CiB
+W7(2dz@i@=`0000<MNUMnLSTYuH8k7+
+
